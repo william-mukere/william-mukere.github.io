@@ -1,182 +1,149 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>William Mukere Portfolio</title>
 
     <!-- SEO and Social Sharing -->
-    <meta name="description" content="Portfolio of William Mukere, Business Process Analyst with expertise in RPA, Lean Six Sigma, and data analysis.">
-    <meta property="og:title" content="William Mukere Portfolio">
-    <meta property="og:description" content="Showcasing projects in data analysis, process optimization, and more.">
-    <meta property="og:image" content="assets/images/profile.jpg">
+    <meta name="description" content="Portfolio of William Mukere, Business Process Analyst with expertise in RPA, Lean Six Sigma, and data analysis." />
+    <meta property="og:title" content="William Mukere Portfolio" />
+    <meta property="og:description" content="Showcasing projects in data analysis, process optimization, and more." />
+    <meta property="og:image" content="assets/images/profile.jpg" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="is-preload">
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>William Mukere</h1>
-            <p>Business Process Analyst | RPA Champion | Lean Six Sigma Yellow Belt</p>
-            <a href="#about" class="button">Learn More</a>
-        </div>
-    </section>
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my portfolio! I am a Business Process Analyst with expertise in robotic process automation, Lean Six Sigma, and a passion for process optimization. I leverage my skills in data analysis to create efficient solutions that drive operational improvements.
-        </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="images/pic01.jpg" alt="Data Analysis in R project screenshot">
-                <h3>Data Analysis in R</h3>
-                <p>Exploring data analysis methodologies in R.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-            <div class="project">
-                <img src="images/pic02.jpg" alt="California Housing project screenshot">
-                <h3>Analyzing California Housing Prices</h3>
-                <p>Analyzing housing prices in California using Python.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-            <div class="project">
-                <img src="images/pic03.jpg" alt="Data Analysis in SQL project screenshot">
-                <h3>Data Analysis in SQL</h3>
-                <p>Efficient data management and querying in SQL.</p>
-                <a href="#" class="button">View Project</a>
-            </div>
-            <!-- Add more projects as needed following the same structure -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <form method="post" action="#">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="button">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; William Mukere</p>
-            <p>Connect with me:</p>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/williammukere/" aria-label="LinkedIn Profile">LinkedIn</a></li>
+        <!-- Intro Section -->
+        <div id="intro">
+            <h1>William Mukere<br />Portfolio</h1>
+            <p>Business Process Analyst | RPA Champion | Innovation Champion | Lean Six Sigma Yellow Belt - ISSP UK</p>
+            <a href="https://www.linkedin.com/in/williammukere/" target="_blank" rel="noopener noreferrer">@Williammukere</a>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
         </div>
-    </footer>
 
-    <!-- CSS for New Layout -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        /* Hero Section */
-        #hero {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .hero-content {
-            max-width: 600px;
-            margin: auto;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        /* Container */
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        /* Project Grid */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project {
-            text-align: center;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .project img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        /* Contact Form */
-        #contact .form-group {
-            margin-bottom: 15px;
-        }
-        #contact label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        #contact input, #contact textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        .social-links {
-            list-style: none;
-            padding: 0;
-        }
-        .social-links li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .social-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">William</a>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">William Mukere Portfolio</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/williammukere/" class="icon brands fa-linkedin" aria-label="LinkedIn Profile">LinkedIn</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">August 12, 2022</span>
+                    <h2><a href="#">Data Analysis<br />in R</a></h2>
+                    <p>Explore insights and methodologies for analyzing data in R.</p>
+                </header>
+                <a href="#" class="image main"><img src="images/pic01.jpg" alt="Screenshot of Data Analysis in R project" /></a>
+                <ul class="actions special">
+                    <li><a href="#" class="button large">View Project</a></li>
+                </ul>
+            </article>
+
+            <!-- Project Posts Section -->
+            <section class="posts">
+                <!-- Individual Project Post Example -->
+                <article>
+                    <header>
+                        <span class="date">August 8, 2022</span>
+                        <h2><a href="#">Analyzing California Housing Prices<br />Using Python</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="Screenshot of Python California Housing project" /></a>
+                    <p>Analyzing housing price trends using Python and various data analysis techniques.</p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <!-- Additional Project Examples (repeat for each project) -->
+                <!-- Consistent title case applied for better readability -->
+                <article>
+                    <header>
+                        <span class="date">August 12, 2022</span>
+                        <h2><a href="#">Data Analysis in SQL</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="Screenshot of Data Analysis in SQL project" /></a>
+                    <p>Implementing data analysis with SQL, focusing on efficient querying and data management.</p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button">View Project</a></li>
+                    </ul>
+                </article>
+
+                <!-- Repeat above structure for remaining projects -->
+
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="footer">
+            <section>
+                <h3>Contact Me</h3>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                    </ul>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.linkedin.com/in/williammukere/" class="icon brands fa-linkedin" aria-label="LinkedIn Profile">LinkedIn</a></li>
+                </ul>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; William Mukere</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
