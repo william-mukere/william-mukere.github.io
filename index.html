@@ -5,103 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>William Mukere Portfolio</title>
 
+    <!-- SEO and Social Sharing -->
+    <meta name="description" content="Portfolio of William Mukere, Business Process Analyst with expertise in RPA, Lean Six Sigma, and data analysis.">
+    <meta property="og:title" content="William Mukere Portfolio">
+    <meta property="og:description" content="Showcasing projects in data analysis, process optimization, and more.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>William Mukere</h1>
+            <p>Business Process Analyst | RPA Champion | Lean Six Sigma Yellow Belt</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio! I am a Business Process Analyst with expertise in robotic process automation, Lean Six Sigma, and a passion for process optimization. I leverage my skills in data analysis to create efficient solutions that drive operational improvements.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/pic01.jpg" alt="Data Analysis in R project screenshot">
+                <h3>Data Analysis in R</h3>
+                <p>Exploring data analysis methodologies in R.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/pic02.jpg" alt="California Housing project screenshot">
+                <h3>Analyzing California Housing Prices</h3>
+                <p>Analyzing housing prices in California using Python.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/pic03.jpg" alt="Data Analysis in SQL project screenshot">
+                <h3>Data Analysis in SQL</h3>
+                <p>Efficient data management and querying in SQL.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <!-- Add more projects as needed following the same structure -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form method="post" action="#">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; William Mukere</p>
+            <p>Connect with me:</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/williammukere/" aria-label="LinkedIn Profile">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- CSS for New Layout -->
     <style>
-        /* Reset and Base Styles */
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
+            color: #333;
         }
-
-        /* Sidebar */
-        #sidebar {
-            background-color: #2d2f36;
-            color: #fff;
-            width: 250px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            position: fixed;
-        }
-        #sidebar h2 {
-            margin-top: 20px;
-            font-size: 1.5em;
-        }
-        #sidebar nav {
-            margin-top: 30px;
-            width: 100%;
-        }
-        #sidebar nav a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            padding: 10px 15px;
-            margin: 10px 0;
-            text-align: center;
+        /* Hero Section */
+        #hero {
             background-color: #4CAF50;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 600px;
+            margin: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
             border-radius: 5px;
         }
-        #sidebar nav a:hover {
-            background-color: #3a9d4a;
-        }
-
-        /* Main Content */
-        #content {
-            margin-left: 250px;
-            padding: 40px;
-            width: 100%;
-        }
-        section {
-            margin-bottom: 60px;
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
         }
         h2 {
-            font-size: 1.8em;
-            color: #333;
+            text-align: center;
             margin-bottom: 20px;
         }
-        /* About Section */
-        #about {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        #about p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
         /* Project Grid */
-        #projects .project-grid {
-            display: flex;
-            flex-wrap: wrap;
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
         }
-        .project-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: calc(50% - 10px);
-            padding: 15px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+        .project {
+            text-align: center;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
         }
-        .project-item:hover {
-            transform: translateY(-5px);
-        }
-        .project-item h3 {
-            font-size: 1.4em;
-            margin: 10px 0;
-        }
-        .project-item img {
+        .project img {
             max-width: 100%;
             border-radius: 5px;
         }
-
         /* Contact Form */
         #contact .form-group {
             margin-bottom: 15px;
@@ -112,112 +153,30 @@
         }
         #contact input, #contact textarea {
             width: 100%;
-            padding: 10px;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            box-sizing: border-box;
         }
-        #contact button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #contact button:hover {
-            background-color: #3a9d4a;
-        }
-
         /* Footer */
         footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 20px;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
-</head>
-<body>
-
-    <!-- Sidebar Navigation -->
-    <aside id="sidebar">
-        <h2>William Mukere</h2>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <p>Business Process Analyst | RPA Champion | Lean Six Sigma</p>
-    </aside>
-
-    <!-- Main Content -->
-    <div id="content">
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a Business Process Analyst passionate about robotic process automation, data analysis, and Lean Six Sigma methodologies. I bring a data-driven approach to process improvements, striving to make operations as efficient as possible.
-            </p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <img src="images/pic01.jpg" alt="Data Analysis in R">
-                    <h3>Data Analysis in R</h3>
-                    <p>A project exploring data analysis techniques in R.</p>
-                    <a href="#" class="button">View Project</a>
-                </div>
-                <div class="project-item">
-                    <img src="images/pic02.jpg" alt="California Housing Analysis">
-                    <h3>California Housing Analysis</h3>
-                    <p>Housing data analysis using Python and visualization techniques.</p>
-                    <a href="#" class="button">View Project</a>
-                </div>
-                <div class="project-item">
-                    <img src="images/pic03.jpg" alt="SQL Data Analysis">
-                    <h3>SQL Data Analysis</h3>
-                    <p>Managing and analyzing data with SQL for better insights.</p>
-                    <a href="#" class="button">View Project</a>
-                </div>
-                <div class="project-item">
-                    <img src="images/pic04.jpg" alt="Power BI Visualization">
-                    <h3>Power BI Visualization</h3>
-                    <p>Creating dashboards and visualizations in Power BI.</p>
-                    <a href="#" class="button">View Project</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form method="post" action="#">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 William Mukere. Designed with HTML and CSS.</p>
-        </footer>
-    </div>
 
 </body>
 </html>
