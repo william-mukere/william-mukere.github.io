@@ -31,65 +31,74 @@
             <a href="index.html" class="logo" style="font-size: 30px; color: #00aaff;">William</a>
         </header>
 
-        <!-- Nav -->
-        <nav id="nav" style="background-color: #f1f1f1;">
-            <ul class="links">
-                <li class="active"><a href="index.html" style="color: #0077cc;">William Mukere Portfolio</a></li>
-            </ul>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/williammukere/" class="icon brands fa-linkedin" style="color: #0077cc; font-size: 24px;"></a></li>
-            </ul>
-        </nav>
+        <!-- Main Layout: Sidebar and Content -->
+        <div id="main" style="display: flex; max-width: 1200px; margin: auto; background-color: #f9f9f9; padding: 50px 0;">
 
-        <!-- Main Content -->
-        <div id="main" style="background-color: #f9f9f9; padding: 50px 0;">
+            <!-- Sidebar -->
+            <div id="sidebar" style="width: 25%; background-color: #0077cc; color: white; padding: 30px; border-radius: 8px;">
+                <h2 style="font-size: 24px;">About Me</h2>
+                <p style="font-size: 16px;">
+                    I am a Business Process Analyst with a strong passion for RPA, process improvement, and leveraging data to create impactful solutions. 
+                </p>
+                <h3 style="font-size: 18px;">Follow Me</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li>
+                        <a href="https://www.linkedin.com/in/williammukere/" 
+                           style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; display: block; margin: 10px 0;">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
 
-            <!-- Featured Project -->
-            <section class="posts" style="max-width: 1200px; margin: auto;">
-                <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
-                    <header class="major">
-                        <span class="date" style="font-size: 14px; color: #888;">August 12, 2022</span>
-                        <h2><a href="#">Data Analysis in R</a></h2>
-                        <p>Leveraging R for powerful data analysis to derive actionable insights from complex datasets.</p>
-                    </header>
-                    <a href="#" class="image main">
-                        <img src="images/pic01.jpg" alt="" style="width: 100%; border-radius: 8px;">
-                    </a>
-                    <ul class="actions special" style="text-align: center;">
-                        <li><a href="#" class="button large" style="background-color: #00aaff; color: white; padding: 10px 30px;">View Project</a></li>
-                    </ul>
-                </article>
+            <!-- Content -->
+            <div id="content" style="width: 75%; padding-left: 30px;">
 
-                <!-- More Projects -->
-                <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
-                    <header>
-                        <span class="date" style="font-size: 14px; color: #888;">August 8, 2022</span>
-                        <h2><a href="#">Analysing California Housing Price Using Python</a></h2>
-                    </header>
-                    <a href="#" class="image fit">
-                        <img src="images/pic02.jpg" alt="" style="width: 100%; border-radius: 8px;">
-                    </a>
-                    <p>Utilized Python libraries to analyze housing price data, helping to understand economic factors influencing the market.</p>
-                    <ul class="actions special" style="text-align: center;">
-                        <li><a href="#" class="button" style="background-color: #0077cc; color: white; padding: 10px 20px;">View Project</a></li>
-                    </ul>
-                </article>
+                <!-- Featured Project -->
+                <section class="posts" style="max-width: 1200px; margin: auto;">
+                    <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
+                        <header class="major">
+                            <span class="date" style="font-size: 14px; color: #888;">August 12, 2022</span>
+                            <h2><a href="#">Data Analysis in R</a></h2>
+                            <p>Leveraging R for powerful data analysis to derive actionable insights from complex datasets.</p>
+                        </header>
+                        <a href="#" class="image main">
+                            <img src="images/pic01.jpg" alt="" style="width: 100%; border-radius: 8px;">
+                        </a>
+                        <ul class="actions special" style="text-align: center;">
+                            <li><a href="#" class="button large" style="background-color: #00aaff; color: white; padding: 10px 30px;">View Project</a></li>
+                        </ul>
+                    </article>
 
-                <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
-                    <header>
-                        <span class="date" style="font-size: 14px; color: #888;">August 12, 2022</span>
-                        <h2><a href="#">Data Visualization with Power BI</a></h2>
-                    </header>
-                    <a href="#" class="image fit">
-                        <img src="images/pic03.jpg" alt="" style="width: 100%; border-radius: 8px;">
-                    </a>
-                    <p>Created stunning and insightful visualizations in Power BI to communicate key business metrics to stakeholders.</p>
-                    <ul class="actions special" style="text-align: center;">
-                        <li><a href="#" class="button" style="background-color: #0077cc; color: white; padding: 10px 20px;">View Project</a></li>
-                    </ul>
-                </article>
-            </section>
+                    <!-- More Projects -->
+                    <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
+                        <header>
+                            <span class="date" style="font-size: 14px; color: #888;">August 8, 2022</span>
+                            <h2><a href="#">Analysing California Housing Price Using Python</a></h2>
+                        </header>
+                        <a href="#" class="image fit">
+                            <img src="images/pic02.jpg" alt="" style="width: 100%; border-radius: 8px;">
+                        </a>
+                        <p>Utilized Python libraries to analyze housing price data, helping to understand economic factors influencing the market.</p>
+                        <ul class="actions special" style="text-align: center;">
+                            <li><a href="#" class="button" style="background-color: #0077cc; color: white; padding: 10px 20px;">View Project</a></li>
+                        </ul>
+                    </article>
 
+                    <article style="background-color: white; border-radius: 10px; margin-bottom: 20px; padding: 20px;">
+                        <header>
+                            <span class="date" style="font-size: 14px; color: #888;">August 12, 2022</span>
+                            <h2><a href="#">Data Visualization with Power BI</a></h2>
+                        </header>
+                        <a href="#" class="image fit">
+                            <img src="images/pic03.jpg" alt="" style="width: 100%; border-radius: 8px;">
+                        </a>
+                        <p>Created stunning and insightful visualizations in Power BI to communicate key business metrics to stakeholders.</p>
+                        <ul class="actions special" style="text-align: center;">
+                            <li><a href="#" class="button" style="background-color: #0077cc; color: white; padding: 10px 20px;">View Project</a></li>
+                        </ul>
+                    </article>
+                </section>
+
+            </div>
         </div>
 
         <!-- Footer -->
